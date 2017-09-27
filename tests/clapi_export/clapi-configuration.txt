@@ -1,87 +1,87 @@
 {OBJECT_TYPE};{COMMAND};{PARAMETERS}
 ACLMENU;ADD;test_access-group;test_access-group;
 ACLMENU;SETPARAM;test_access-group;activate;1;
-ACLMENU;GRANTRW;test_access-group;Configuration;
-ACLMENU;GRANTRW;test_access-group;Configuration;Hosts;
-ACLMENU;GRANTRW;test_access-group;Configuration;Hosts;Hosts;
-ACLMENU;GRANTRW;test_access-group;Configuration;Hosts;Host Groups;
-ACLMENU;GRANTRW;test_access-group;Configuration;Hosts;Templates;
-ACLMENU;GRANTRW;test_access-group;Configuration;Hosts;Categories;
-ACLMENU;GRANTRW;test_access-group;Configuration;Services;
-ACLMENU;GRANTRW;test_access-group;Configuration;Services;Services by host;
-ACLMENU;GRANTRW;test_access-group;Configuration;Services;Services by host group;
-ACLMENU;GRANTRW;test_access-group;Configuration;Services;Service Groups;
-ACLMENU;GRANTRW;test_access-group;Configuration;Services;Templates;
-ACLMENU;GRANTRW;test_access-group;Configuration;Services;Categories;
-ACLMENU;GRANTRW;test_access-group;Configuration;Services;Meta Services;
-ACLMENU;GRANTRW;test_access-group;Configuration;Users;
-ACLMENU;GRANTRW;test_access-group;Configuration;Users;Contacts / Users;
-ACLMENU;GRANTRW;test_access-group;Configuration;Users;Contact Templates;
-ACLMENU;GRANTRW;test_access-group;Configuration;Users;Contact Groups;
-ACLMENU;GRANTRW;test_access-group;Configuration;Users;Time Periods;
-ACLMENU;GRANTRW;test_access-group;Configuration;Commands;
-ACLMENU;GRANTRW;test_access-group;Configuration;Commands;Checks;
-ACLMENU;GRANTRW;test_access-group;Configuration;Commands;Notifications;
-ACLMENU;GRANTRW;test_access-group;Configuration;Commands;Discovery;
-ACLMENU;GRANTRW;test_access-group;Configuration;Commands;Miscellaneous;
-ACLMENU;GRANTRW;test_access-group;Configuration;Commands;Connectors;
-ACLMENU;GRANTRW;test_access-group;Configuration;Notifications;
-ACLMENU;GRANTRW;test_access-group;Configuration;Notifications;Escalations;
-ACLMENU;GRANTRW;test_access-group;Configuration;Notifications;Hosts;
-ACLMENU;GRANTRW;test_access-group;Configuration;Notifications;Host Groups;
-ACLMENU;GRANTRW;test_access-group;Configuration;Notifications;Services;
-ACLMENU;GRANTRW;test_access-group;Configuration;Notifications;Service Groups;
-ACLMENU;GRANTRW;test_access-group;Configuration;Notifications;Meta Services;
-ACLMENU;GRANTRW;test_access-group;Configuration;SNMP Traps;
-ACLMENU;GRANTRW;test_access-group;Configuration;SNMP Traps;SNMP Traps;
-ACLMENU;GRANTRW;test_access-group;Configuration;SNMP Traps;Manufacturer;
-ACLMENU;GRANTRW;test_access-group;Configuration;SNMP Traps;Group;
-ACLMENU;GRANTRW;test_access-group;Configuration;SNMP Traps;MIBs;
-ACLMENU;GRANTRW;test_access-group;Configuration;SNMP Traps;Generate;
-ACLMENU;GRANTRW;test_access-group;Configuration;Knowledge Base;
-ACLMENU;GRANTRW;test_access-group;Configuration;Knowledge Base;Hosts;
-ACLMENU;GRANTRW;test_access-group;Configuration;Knowledge Base;Services;
-ACLMENU;GRANTRW;test_access-group;Configuration;Knowledge Base;Host Templates;
-ACLMENU;GRANTRW;test_access-group;Configuration;Knowledge Base;Service Templates;
-ACLMENU;GRANTRW;test_access-group;Configuration;Pollers;
-ACLMENU;GRANTRW;test_access-group;Configuration;Pollers;Export configuration;
-ACLMENU;GRANTRW;test_access-group;Configuration;Pollers;Pollers;
-ACLMENU;GRANTRW;test_access-group;Configuration;Pollers;Engine configuration;
-ACLMENU;GRANTRW;test_access-group;Configuration;Pollers;Broker configuration;
-ACLMENU;GRANTRW;test_access-group;Configuration;Pollers;Broker configuration;Wizard;
-ACLMENU;GRANTRW;test_access-group;Configuration;Pollers;Broker configuration;WizardAjax;
-ACLMENU;GRANTRW;test_access-group;Configuration;Pollers;Resources;
-ACLMENU;GRANTRW;test_access-group;Administration;
-ACLMENU;GRANTRW;test_access-group;Administration;Parameters;
-ACLMENU;GRANTRW;test_access-group;Administration;Parameters;Centreon UI;
-ACLMENU;GRANTRW;test_access-group;Administration;Parameters;Monitoring;
-ACLMENU;GRANTRW;test_access-group;Administration;Parameters;CentCore;
-ACLMENU;GRANTRW;test_access-group;Administration;Parameters;My Account;
-ACLMENU;GRANTRW;test_access-group;Administration;Parameters;LDAP;
-ACLMENU;GRANTRW;test_access-group;Administration;Parameters;RRDTool;
-ACLMENU;GRANTRW;test_access-group;Administration;Parameters;Debug;
-ACLMENU;GRANTRW;test_access-group;Administration;Parameters;Knowledge Base;
-ACLMENU;GRANTRW;test_access-group;Administration;Parameters;CSS;
-ACLMENU;GRANTRW;test_access-group;Administration;Parameters;Backup;
-ACLMENU;GRANTRW;test_access-group;Administration;Parameters;Options;
-ACLMENU;GRANTRW;test_access-group;Administration;Parameters;Data;
-ACLMENU;GRANTRW;test_access-group;Administration;Parameters;Images;
-ACLMENU;GRANTRW;test_access-group;Administration;Extensions;
-ACLMENU;GRANTRW;test_access-group;Administration;Extensions;Modules;
-ACLMENU;GRANTRW;test_access-group;Administration;Extensions;Widgets;
-ACLMENU;GRANTRW;test_access-group;Administration;ACL;
-ACLMENU;GRANTRW;test_access-group;Administration;ACL;Access Groups;
-ACLMENU;GRANTRW;test_access-group;Administration;ACL;Menus Access;
-ACLMENU;GRANTRW;test_access-group;Administration;ACL;Resources Access;
-ACLMENU;GRANTRW;test_access-group;Administration;ACL;Actions Access;
-ACLMENU;GRANTRW;test_access-group;Administration;ACL;Reload ACL;
-ACLMENU;GRANTRW;test_access-group;Administration;Logs;
-ACLMENU;GRANTRW;test_access-group;Administration;Logs;Visualisation;
-ACLMENU;GRANTRW;test_access-group;Administration;Sessions;
-ACLMENU;GRANTRW;test_access-group;Administration;Server Status;
-ACLMENU;GRANTRW;test_access-group;Administration;Server Status;Databases;
-ACLMENU;GRANTRW;test_access-group;Administration;About;
-ACLMENU;GRANTRW;test_access-group;Administration;About;About;
+ACLMENU;GRANTRW;test_access-group;0;Configuration;
+ACLMENU;GRANTRW;test_access-group;0;Configuration;Hosts;
+ACLMENU;GRANTRW;test_access-group;0;Configuration;Hosts;Hosts;
+ACLMENU;GRANTRW;test_access-group;0;Configuration;Hosts;Host Groups;
+ACLMENU;GRANTRW;test_access-group;0;Configuration;Hosts;Templates;
+ACLMENU;GRANTRW;test_access-group;0;Configuration;Hosts;Categories;
+ACLMENU;GRANTRW;test_access-group;0;Configuration;Services;
+ACLMENU;GRANTRW;test_access-group;0;Configuration;Services;Services by host;
+ACLMENU;GRANTRW;test_access-group;0;Configuration;Services;Services by host group;
+ACLMENU;GRANTRW;test_access-group;0;Configuration;Services;Service Groups;
+ACLMENU;GRANTRW;test_access-group;0;Configuration;Services;Templates;
+ACLMENU;GRANTRW;test_access-group;0;Configuration;Services;Categories;
+ACLMENU;GRANTRW;test_access-group;0;Configuration;Services;Meta Services;
+ACLMENU;GRANTRW;test_access-group;0;Configuration;Users;
+ACLMENU;GRANTRW;test_access-group;0;Configuration;Users;Contacts / Users;
+ACLMENU;GRANTRW;test_access-group;0;Configuration;Users;Contact Templates;
+ACLMENU;GRANTRW;test_access-group;0;Configuration;Users;Contact Groups;
+ACLMENU;GRANTRW;test_access-group;0;Configuration;Users;Time Periods;
+ACLMENU;GRANTRW;test_access-group;0;Configuration;Commands;
+ACLMENU;GRANTRW;test_access-group;0;Configuration;Commands;Checks;
+ACLMENU;GRANTRW;test_access-group;0;Configuration;Commands;Notifications;
+ACLMENU;GRANTRW;test_access-group;0;Configuration;Commands;Discovery;
+ACLMENU;GRANTRW;test_access-group;0;Configuration;Commands;Miscellaneous;
+ACLMENU;GRANTRW;test_access-group;0;Configuration;Commands;Connectors;
+ACLMENU;GRANTRW;test_access-group;0;Configuration;Notifications;
+ACLMENU;GRANTRW;test_access-group;0;Configuration;Notifications;Escalations;
+ACLMENU;GRANTRW;test_access-group;0;Configuration;Notifications;Hosts;
+ACLMENU;GRANTRW;test_access-group;0;Configuration;Notifications;Host Groups;
+ACLMENU;GRANTRW;test_access-group;0;Configuration;Notifications;Services;
+ACLMENU;GRANTRW;test_access-group;0;Configuration;Notifications;Service Groups;
+ACLMENU;GRANTRW;test_access-group;0;Configuration;Notifications;Meta Services;
+ACLMENU;GRANTRW;test_access-group;0;Configuration;SNMP Traps;
+ACLMENU;GRANTRW;test_access-group;0;Configuration;SNMP Traps;SNMP Traps;
+ACLMENU;GRANTRW;test_access-group;0;Configuration;SNMP Traps;Manufacturer;
+ACLMENU;GRANTRW;test_access-group;0;Configuration;SNMP Traps;Group;
+ACLMENU;GRANTRW;test_access-group;0;Configuration;SNMP Traps;MIBs;
+ACLMENU;GRANTRW;test_access-group;0;Configuration;SNMP Traps;Generate;
+ACLMENU;GRANTRW;test_access-group;0;Configuration;Knowledge Base;
+ACLMENU;GRANTRW;test_access-group;0;Configuration;Knowledge Base;Hosts;
+ACLMENU;GRANTRW;test_access-group;0;Configuration;Knowledge Base;Services;
+ACLMENU;GRANTRW;test_access-group;0;Configuration;Knowledge Base;Host Templates;
+ACLMENU;GRANTRW;test_access-group;0;Configuration;Knowledge Base;Service Templates;
+ACLMENU;GRANTRW;test_access-group;0;Configuration;Pollers;
+ACLMENU;GRANTRW;test_access-group;0;Configuration;Pollers;Export configuration;
+ACLMENU;GRANTRW;test_access-group;0;Configuration;Pollers;Pollers;
+ACLMENU;GRANTRW;test_access-group;0;Configuration;Pollers;Engine configuration;
+ACLMENU;GRANTRW;test_access-group;0;Configuration;Pollers;Broker configuration;
+ACLMENU;GRANTRW;test_access-group;0;Configuration;Pollers;Broker configuration;Wizard;
+ACLMENU;GRANTRW;test_access-group;0;Configuration;Pollers;Broker configuration;WizardAjax;
+ACLMENU;GRANTRW;test_access-group;0;Configuration;Pollers;Resources;
+ACLMENU;GRANTRW;test_access-group;0;Administration;
+ACLMENU;GRANTRW;test_access-group;0;Administration;Parameters;
+ACLMENU;GRANTRW;test_access-group;0;Administration;Parameters;Centreon UI;
+ACLMENU;GRANTRW;test_access-group;0;Administration;Parameters;Monitoring;
+ACLMENU;GRANTRW;test_access-group;0;Administration;Parameters;CentCore;
+ACLMENU;GRANTRW;test_access-group;0;Administration;Parameters;My Account;
+ACLMENU;GRANTRW;test_access-group;0;Administration;Parameters;LDAP;
+ACLMENU;GRANTRW;test_access-group;0;Administration;Parameters;RRDTool;
+ACLMENU;GRANTRW;test_access-group;0;Administration;Parameters;Debug;
+ACLMENU;GRANTRW;test_access-group;0;Administration;Parameters;Knowledge Base;
+ACLMENU;GRANTRW;test_access-group;0;Administration;Parameters;CSS;
+ACLMENU;GRANTRW;test_access-group;0;Administration;Parameters;Backup;
+ACLMENU;GRANTRW;test_access-group;0;Administration;Parameters;Options;
+ACLMENU;GRANTRW;test_access-group;0;Administration;Parameters;Data;
+ACLMENU;GRANTRW;test_access-group;0;Administration;Parameters;Images;
+ACLMENU;GRANTRW;test_access-group;0;Administration;Extensions;
+ACLMENU;GRANTRW;test_access-group;0;Administration;Extensions;Modules;
+ACLMENU;GRANTRW;test_access-group;0;Administration;Extensions;Widgets;
+ACLMENU;GRANTRW;test_access-group;0;Administration;ACL;
+ACLMENU;GRANTRW;test_access-group;0;Administration;ACL;Access Groups;
+ACLMENU;GRANTRW;test_access-group;0;Administration;ACL;Menus Access;
+ACLMENU;GRANTRW;test_access-group;0;Administration;ACL;Resources Access;
+ACLMENU;GRANTRW;test_access-group;0;Administration;ACL;Actions Access;
+ACLMENU;GRANTRW;test_access-group;0;Administration;ACL;Reload ACL;
+ACLMENU;GRANTRW;test_access-group;0;Administration;Logs;
+ACLMENU;GRANTRW;test_access-group;0;Administration;Logs;Visualisation;
+ACLMENU;GRANTRW;test_access-group;0;Administration;Sessions;
+ACLMENU;GRANTRW;test_access-group;0;Administration;Server Status;
+ACLMENU;GRANTRW;test_access-group;0;Administration;Server Status;Databases;
+ACLMENU;GRANTRW;test_access-group;0;Administration;About;
+ACLMENU;GRANTRW;test_access-group;0;Administration;About;About;
 ACLACTION;ADD;Simple User;Simple User;
 ACLACTION;SETPARAM;Simple User;activate;1;
 ACLACTION;GRANT;Simple User;poller_stats;
@@ -222,54 +222,79 @@ CENTBROKERCFG;SETPARAM;central-broker-master;stats_activate;1
 CENTBROKERCFG;SETPARAM;central-broker-master;correlation_activate;0
 CENTBROKERCFG;SETPARAM;central-broker-master;daemon;1
 CENTBROKERCFG;ADDINPUT;central-broker-master;central-broker-master-input;ipv4
-CENTBROKERCFG;SETINPUT;central-broker-master;1;port;5669
-CENTBROKERCFG;SETINPUT;central-broker-master;1;buffering_timeout;0
-CENTBROKERCFG;SETINPUT;central-broker-master;1;retry_interval;60
-CENTBROKERCFG;SETINPUT;central-broker-master;1;protocol;bbdo
-CENTBROKERCFG;SETINPUT;central-broker-master;1;tls;auto
-CENTBROKERCFG;SETINPUT;central-broker-master;1;negociation;yes
-CENTBROKERCFG;SETINPUT;central-broker-master;1;compression;auto
-CENTBROKERCFG;SETINPUT;central-broker-master;1;type;ipv4
+CENTBROKERCFG;SETINPUT;central-broker-master;0;port;5669
+CENTBROKERCFG;SETINPUT;central-broker-master;0;retry_interval;60
+CENTBROKERCFG;SETINPUT;central-broker-master;0;buffering_timeout;0
+CENTBROKERCFG;SETINPUT;central-broker-master;0;protocol;bbdo
+CENTBROKERCFG;SETINPUT;central-broker-master;0;tls;no
+CENTBROKERCFG;SETINPUT;central-broker-master;0;negotiation;yes
+CENTBROKERCFG;SETINPUT;central-broker-master;0;one_peer_retention_mode;no
+CENTBROKERCFG;SETINPUT;central-broker-master;0;compression;no
+CENTBROKERCFG;SETINPUT;central-broker-master;0;type;ipv4
 CENTBROKERCFG;ADDLOGGER;central-broker-master;/var/log/centreon-broker/central-broker-master.log;file
-CENTBROKERCFG;SETLOGGER;central-broker-master;1;config;yes
-CENTBROKERCFG;SETLOGGER;central-broker-master;1;debug;no
-CENTBROKERCFG;SETLOGGER;central-broker-master;1;error;yes
-CENTBROKERCFG;SETLOGGER;central-broker-master;1;info;no
-CENTBROKERCFG;SETLOGGER;central-broker-master;1;level;low
-CENTBROKERCFG;SETLOGGER;central-broker-master;1;type;file
+CENTBROKERCFG;SETLOGGER;central-broker-master;0;config;yes
+CENTBROKERCFG;SETLOGGER;central-broker-master;0;debug;no
+CENTBROKERCFG;SETLOGGER;central-broker-master;0;error;yes
+CENTBROKERCFG;SETLOGGER;central-broker-master;0;info;no
+CENTBROKERCFG;SETLOGGER;central-broker-master;0;level;low
+CENTBROKERCFG;SETLOGGER;central-broker-master;0;type;file
 CENTBROKERCFG;ADDOUTPUT;central-broker-master;central-broker-master-sql;sql
-CENTBROKERCFG;SETOUTPUT;central-broker-master;1;db_type;mysql
+CENTBROKERCFG;SETOUTPUT;central-broker-master;0;db_type;mysql
+CENTBROKERCFG;SETOUTPUT;central-broker-master;0;retry_interval;60
+CENTBROKERCFG;SETOUTPUT;central-broker-master;0;buffering_timeout;0
+CENTBROKERCFG;SETOUTPUT;central-broker-master;0;db_host;localhost
+CENTBROKERCFG;SETOUTPUT;central-broker-master;0;db_port;3306
+CENTBROKERCFG;SETOUTPUT;central-broker-master;0;db_user;centreon
+CENTBROKERCFG;SETOUTPUT;central-broker-master;0;db_password;centreon
+CENTBROKERCFG;SETOUTPUT;central-broker-master;0;db_name;centreon_storage
+CENTBROKERCFG;SETOUTPUT;central-broker-master;0;check_replication;no
+CENTBROKERCFG;SETOUTPUT;central-broker-master;0;type;sql
+CENTBROKERCFG;ADDINPUT;central-broker-master;central-broker-master-input;ipv4
+CENTBROKERCFG;SETINPUT;central-broker-master;1;port;5669
+CENTBROKERCFG;SETINPUT;central-broker-master;1;retry_interval;60
+CENTBROKERCFG;SETINPUT;central-broker-master;1;buffering_timeout;0
+CENTBROKERCFG;SETINPUT;central-broker-master;1;protocol;bbdo
+CENTBROKERCFG;SETINPUT;central-broker-master;1;tls;no
+CENTBROKERCFG;SETINPUT;central-broker-master;1;negotiation;yes
+CENTBROKERCFG;SETINPUT;central-broker-master;1;one_peer_retention_mode;no
+CENTBROKERCFG;SETINPUT;central-broker-master;1;compression;no
+CENTBROKERCFG;SETINPUT;central-broker-master;1;type;ipv4
+CENTBROKERCFG;ADDOUTPUT;central-broker-master;centreon-broker-master-rrd;ipv4
+CENTBROKERCFG;SETOUTPUT;central-broker-master;1;port;5670
+CENTBROKERCFG;SETOUTPUT;central-broker-master;1;host;localhost
 CENTBROKERCFG;SETOUTPUT;central-broker-master;1;retry_interval;60
 CENTBROKERCFG;SETOUTPUT;central-broker-master;1;buffering_timeout;0
-CENTBROKERCFG;SETOUTPUT;central-broker-master;1;db_host;localhost
-CENTBROKERCFG;SETOUTPUT;central-broker-master;1;db_port;3306
-CENTBROKERCFG;SETOUTPUT;central-broker-master;1;db_user;centreon
-CENTBROKERCFG;SETOUTPUT;central-broker-master;1;db_password;centreon
-CENTBROKERCFG;SETOUTPUT;central-broker-master;1;db_name;centreon_storage
-CENTBROKERCFG;SETOUTPUT;central-broker-master;1;type;sql
-CENTBROKERCFG;ADDOUTPUT;central-broker-master;centreon-broker-master-rrd;ipv4
-CENTBROKERCFG;SETOUTPUT;central-broker-master;2;port;5670
-CENTBROKERCFG;SETOUTPUT;central-broker-master;2;buffering_timeout;0
-CENTBROKERCFG;SETOUTPUT;central-broker-master;2;host;localhost
-CENTBROKERCFG;SETOUTPUT;central-broker-master;2;retry_interval;60
-CENTBROKERCFG;SETOUTPUT;central-broker-master;2;protocol;bbdo
-CENTBROKERCFG;SETOUTPUT;central-broker-master;2;tls;no
-CENTBROKERCFG;SETOUTPUT;central-broker-master;2;negociation;yes
-CENTBROKERCFG;SETOUTPUT;central-broker-master;2;compression;no
-CENTBROKERCFG;SETOUTPUT;central-broker-master;2;type;ipv4
+CENTBROKERCFG;SETOUTPUT;central-broker-master;1;protocol;bbdo
+CENTBROKERCFG;SETOUTPUT;central-broker-master;1;tls;no
+CENTBROKERCFG;SETOUTPUT;central-broker-master;1;negotiation;yes
+CENTBROKERCFG;SETOUTPUT;central-broker-master;1;one_peer_retention_mode;no
+CENTBROKERCFG;SETOUTPUT;central-broker-master;1;compression;no
+CENTBROKERCFG;SETOUTPUT;central-broker-master;1;type;ipv4
+CENTBROKERCFG;ADDINPUT;central-broker-master;central-broker-master-input;ipv4
+CENTBROKERCFG;SETINPUT;central-broker-master;2;port;5669
+CENTBROKERCFG;SETINPUT;central-broker-master;2;retry_interval;60
+CENTBROKERCFG;SETINPUT;central-broker-master;2;buffering_timeout;0
+CENTBROKERCFG;SETINPUT;central-broker-master;2;protocol;bbdo
+CENTBROKERCFG;SETINPUT;central-broker-master;2;tls;no
+CENTBROKERCFG;SETINPUT;central-broker-master;2;negotiation;yes
+CENTBROKERCFG;SETINPUT;central-broker-master;2;one_peer_retention_mode;no
+CENTBROKERCFG;SETINPUT;central-broker-master;2;compression;no
+CENTBROKERCFG;SETINPUT;central-broker-master;2;type;ipv4
 CENTBROKERCFG;ADDOUTPUT;central-broker-master;central-broker-master-perfdata;storage
-CENTBROKERCFG;SETOUTPUT;central-broker-master;3;interval;60
-CENTBROKERCFG;SETOUTPUT;central-broker-master;3;retry_interval;60
-CENTBROKERCFG;SETOUTPUT;central-broker-master;3;buffering_timeout;0
-CENTBROKERCFG;SETOUTPUT;central-broker-master;3;length;15552000
-CENTBROKERCFG;SETOUTPUT;central-broker-master;3;db_type;mysql
-CENTBROKERCFG;SETOUTPUT;central-broker-master;3;db_host;localhost
-CENTBROKERCFG;SETOUTPUT;central-broker-master;3;db_port;3306
-CENTBROKERCFG;SETOUTPUT;central-broker-master;3;db_user;centreon
-CENTBROKERCFG;SETOUTPUT;central-broker-master;3;db_password;centreon
-CENTBROKERCFG;SETOUTPUT;central-broker-master;3;db_name;centreon_storage
-CENTBROKERCFG;SETOUTPUT;central-broker-master;3;check_replication;no
-CENTBROKERCFG;SETOUTPUT;central-broker-master;3;type;storage
+CENTBROKERCFG;SETOUTPUT;central-broker-master;2;interval;60
+CENTBROKERCFG;SETOUTPUT;central-broker-master;2;retry_interval;60
+CENTBROKERCFG;SETOUTPUT;central-broker-master;2;buffering_timeout;0
+CENTBROKERCFG;SETOUTPUT;central-broker-master;2;length;15552000
+CENTBROKERCFG;SETOUTPUT;central-broker-master;2;db_type;mysql
+CENTBROKERCFG;SETOUTPUT;central-broker-master;2;db_host;localhost
+CENTBROKERCFG;SETOUTPUT;central-broker-master;2;db_port;3306
+CENTBROKERCFG;SETOUTPUT;central-broker-master;2;db_user;centreon
+CENTBROKERCFG;SETOUTPUT;central-broker-master;2;db_password;centreon
+CENTBROKERCFG;SETOUTPUT;central-broker-master;2;db_name;centreon_storage
+CENTBROKERCFG;SETOUTPUT;central-broker-master;2;check_replication;no
+CENTBROKERCFG;SETOUTPUT;central-broker-master;2;store_in_data_bin;yes
+CENTBROKERCFG;SETOUTPUT;central-broker-master;2;insert_in_index_data;1
+CENTBROKERCFG;SETOUTPUT;central-broker-master;2;type;storage
 CENTBROKERCFG;ADD;central-rrd-master;Central
 CENTBROKERCFG;SETPARAM;central-rrd-master;filename;central-rrd.xml
 CENTBROKERCFG;SETPARAM;central-rrd-master;cache_directory;/var/lib/centreon-broker
@@ -480,7 +505,7 @@ ENGINECFG;setparam;Centreon Engine Central_1;debug_verbosity;2
 ENGINECFG;setparam;Centreon Engine Central_1;cfg_file;centengine.cfg
 ENGINECFG;setparam;Centreon Engine Central_1;log_pid;1
 ENGINECFG;setparam;Centreon Engine Central_1;broker_module;/usr/lib64/centreon-engine/externalcmd.so|/usr/lib64/nagios/cbmod.so /etc/centreon-broker/central-module.xml
-CONTACTTPL;ADD;test_name;test_contact-template;;9003d1df22eb4d3820015070385194c8;;;;local
+CONTACTTPL;ADD;test_name;test_contact-template;;md5__b0e52a1510c9012ebae9e9dc1ae0c46e;;;;local
 CONTACTTPL;setparam;test_contact-template;hostnotifopt;n
 CONTACTTPL;setparam;test_contact-template;servicenotifopt;n
 CONTACTTPL;setparam;test_contact-template;contact_js_effects;0
@@ -512,7 +537,7 @@ LDAP;SETPARAM;test_configuration-LDAP;user_group;memberOf;
 LDAP;SETPARAM;test_configuration-LDAP;user_lastname;sn;
 LDAP;SETPARAM;test_configuration-LDAP;user_name;name;
 LDAP;SETPARAM;test_configuration-LDAP;user_pager;mobile;
-CONTACT;ADD;Guillaume toto;admin;gbaldo@centreon.com;2995cb0650c5f107230ed569a8c4d6e5;1;1;en_US;local
+CONTACT;ADD;Guillaume toto;admin;gbaldo@centreon.com;md5__2f0a912f1c89b4f4fc9edd324d9d1c89;1;1;en_US;local
 CONTACT;setparam;admin;hostnotifperiod;24x7
 CONTACT;setparam;admin;svcnotifperiod;24x7
 CONTACT;setparam;admin;hostnotifopt;n
@@ -523,7 +548,7 @@ CONTACT;setparam;admin;reach_api;0
 CONTACT;setparam;admin;contact_enable_notifications;1
 CONTACT;setparam;admin;contact_type_msg;txt
 CONTACT;setparam;admin;contact_activate;1
-CONTACT;ADD;Guest;guest;guest@localhost;;0;0;en_US;local
+CONTACT;ADD;Guest;guest;guest@localhost;md5__d41d8cd98f00b204e9800998ecf8427e;0;0;en_US;local
 CONTACT;setparam;guest;hostnotifperiod;24x7
 CONTACT;setparam;guest;svcnotifperiod;24x7
 CONTACT;setparam;guest;hostnotifopt;n
@@ -534,7 +559,7 @@ CONTACT;setparam;guest;reach_api;0
 CONTACT;setparam;guest;contact_enable_notifications;2
 CONTACT;setparam;guest;contact_type_msg;txt
 CONTACT;setparam;guest;contact_activate;0
-CONTACT;ADD;User;user;user@localhost;;0;0;en_US;local
+CONTACT;ADD;User;user;user@localhost;md5__d41d8cd98f00b204e9800998ecf8427e;0;0;en_US;local
 CONTACT;setparam;user;hostnotifperiod;24x7
 CONTACT;setparam;user;svcnotifperiod;24x7
 CONTACT;setparam;user;hostnotifopt;n
@@ -545,13 +570,18 @@ CONTACT;setparam;user;reach_api;0
 CONTACT;setparam;user;contact_enable_notifications;2
 CONTACT;setparam;user;contact_type_msg;txt
 CONTACT;setparam;user;contact_activate;0
-CONTACT;ADD;test_contact;test_contact;test@localhost;9003d1df22eb4d3820015070385194c8;0;0;en_US;local
+CONTACT;ADD;test_contact;test_contact;test@localhost;md5__b0e52a1510c9012ebae9e9dc1ae0c46e;0;0;en_US;local
 CONTACT;setparam;test_contact;hostnotifopt;n
 CONTACT;setparam;test_contact;servicenotifopt;n
 CONTACT;setparam;test_contact;contact_js_effects;0
 CONTACT;setparam;test_contact;reach_api;0
 CONTACT;setparam;test_contact;contact_enable_notifications;0
 CONTACT;setparam;test_contact;contact_activate;1
+CONTACT;ADD;Jean-Pierre;jeanpierre;Jean-Pierre@hotmail.fr;md5__d41d8cd98f00b204e9800998ecf8427e;0;1;browser;local
+CONTACT;setparam;jeanpierre;contact_js_effects;0
+CONTACT;setparam;jeanpierre;reach_api;0
+CONTACT;setparam;jeanpierre;contact_enable_notifications;2
+CONTACT;setparam;jeanpierre;contact_activate;1
 TRAP;ADD;linkDown;.1.3.6.1.6.3.1.1.5.3
 TRAP;setparam;linkDown;traps_name;linkDown
 TRAP;setparam;linkDown;traps_oid;.1.3.6.1.6.3.1.1.5.3
@@ -1388,7 +1418,7 @@ TRAP;setparam;dmtfAlert327;traps_comments;Reestablished connection to storage sy
 TRAP;ADD;virtualDiskCreated;.1.3.6.1.4.1.674.10893.1.1.200.0.505
 TRAP;setparam;virtualDiskCreated;traps_name;virtualDiskCreated
 TRAP;setparam;virtualDiskCreated;traps_oid;.1.3.6.1.4.1.674.10893.1.1.200.0.505
-TRAP;setparam;virtualDiskCreated;traps_args;Array Manager Event: Virtual Disk created: 
+TRAP;setparam;virtualDiskCreated;traps_args;Array Manager Event: Virtual Disk created:
 TRAP;setparam;virtualDiskCreated;traps_status;0
 TRAP;setparam;virtualDiskCreated;vendor;Dell
 TRAP;setparam;virtualDiskCreated;traps_reschedule_svc_enable;0
@@ -1405,7 +1435,7 @@ TRAP;setparam;virtualDiskCreated;traps_comments;%s, virtual disk (%s) created.<b
 TRAP;ADD;virtualDiskDeleted;.1.3.6.1.4.1.674.10893.1.1.200.0.506
 TRAP;setparam;virtualDiskDeleted;traps_name;virtualDiskDeleted
 TRAP;setparam;virtualDiskDeleted;traps_oid;.1.3.6.1.4.1.674.10893.1.1.200.0.506
-TRAP;setparam;virtualDiskDeleted;traps_args;Array Manager Event: Virtual Disk deleted: 
+TRAP;setparam;virtualDiskDeleted;traps_args;Array Manager Event: Virtual Disk deleted:
 TRAP;setparam;virtualDiskDeleted;traps_status;1
 TRAP;setparam;virtualDiskDeleted;vendor;Dell
 TRAP;setparam;virtualDiskDeleted;traps_reschedule_svc_enable;0
@@ -1422,7 +1452,7 @@ TRAP;setparam;virtualDiskDeleted;traps_comments;%s, virtual disk (%s) deleted.<b
 TRAP;ADD;virtualDiskConfigChanged;.1.3.6.1.4.1.674.10893.1.1.200.0.507
 TRAP;setparam;virtualDiskConfigChanged;traps_name;virtualDiskConfigChanged
 TRAP;setparam;virtualDiskConfigChanged;traps_oid;.1.3.6.1.4.1.674.10893.1.1.200.0.507
-TRAP;setparam;virtualDiskConfigChanged;traps_args;Array Manager Event: Virtual Disk created: 
+TRAP;setparam;virtualDiskConfigChanged;traps_args;Array Manager Event: Virtual Disk created:
 TRAP;setparam;virtualDiskConfigChanged;traps_status;0
 TRAP;setparam;virtualDiskConfigChanged;vendor;Dell
 TRAP;setparam;virtualDiskConfigChanged;traps_reschedule_svc_enable;0
@@ -1439,7 +1469,7 @@ TRAP;setparam;virtualDiskConfigChanged;traps_comments;%s, virtual disk (%s) conf
 TRAP;ADD;virtualDiskFailed;.1.3.6.1.4.1.674.10893.1.1.200.0.508
 TRAP;setparam;virtualDiskFailed;traps_name;virtualDiskFailed
 TRAP;setparam;virtualDiskFailed;traps_oid;.1.3.6.1.4.1.674.10893.1.1.200.0.508
-TRAP;setparam;virtualDiskFailed;traps_args;Array Manager Event: Virtual Disk failed: 
+TRAP;setparam;virtualDiskFailed;traps_args;Array Manager Event: Virtual Disk failed:
 TRAP;setparam;virtualDiskFailed;traps_status;3
 TRAP;setparam;virtualDiskFailed;vendor;Dell
 TRAP;setparam;virtualDiskFailed;traps_reschedule_svc_enable;0
@@ -1456,7 +1486,7 @@ TRAP;setparam;virtualDiskFailed;traps_comments;%s, virtual disk (%s) failed.<br/
 TRAP;ADD;virtualDiskDegraded;.1.3.6.1.4.1.674.10893.1.1.200.0.509
 TRAP;setparam;virtualDiskDegraded;traps_name;virtualDiskDegraded
 TRAP;setparam;virtualDiskDegraded;traps_oid;.1.3.6.1.4.1.674.10893.1.1.200.0.509
-TRAP;setparam;virtualDiskDegraded;traps_args;Array Manager Event: Virtual Disk degraded: 
+TRAP;setparam;virtualDiskDegraded;traps_args;Array Manager Event: Virtual Disk degraded:
 TRAP;setparam;virtualDiskDegraded;traps_status;1
 TRAP;setparam;virtualDiskDegraded;vendor;Dell
 TRAP;setparam;virtualDiskDegraded;traps_reschedule_svc_enable;0
@@ -1473,7 +1503,7 @@ TRAP;setparam;virtualDiskDegraded;traps_comments;%s, virtual disk (%s) degraded.
 TRAP;ADD;vdFailedRedundancy;.1.3.6.1.4.1.674.10893.1.1.200.0.510
 TRAP;setparam;vdFailedRedundancy;traps_name;vdFailedRedundancy
 TRAP;setparam;vdFailedRedundancy;traps_oid;.1.3.6.1.4.1.674.10893.1.1.200.0.510
-TRAP;setparam;vdFailedRedundancy;traps_args;Array Manager Event: Virtual Disk failed redundancy: 
+TRAP;setparam;vdFailedRedundancy;traps_args;Array Manager Event: Virtual Disk failed redundancy:
 TRAP;setparam;vdFailedRedundancy;traps_status;1
 TRAP;setparam;vdFailedRedundancy;vendor;Dell
 TRAP;setparam;vdFailedRedundancy;traps_reschedule_svc_enable;0
@@ -1490,7 +1520,7 @@ TRAP;setparam;vdFailedRedundancy;traps_comments;%s, virtual disk (%s) is no long
 TRAP;ADD;vdFormatStarted;.1.3.6.1.4.1.674.10893.1.1.200.0.521
 TRAP;setparam;vdFormatStarted;traps_name;vdFormatStarted
 TRAP;setparam;vdFormatStarted;traps_oid;.1.3.6.1.4.1.674.10893.1.1.200.0.521
-TRAP;setparam;vdFormatStarted;traps_args;Array Manager Event: Virtual Disk format started: 
+TRAP;setparam;vdFormatStarted;traps_args;Array Manager Event: Virtual Disk format started:
 TRAP;setparam;vdFormatStarted;traps_status;1
 TRAP;setparam;vdFormatStarted;vendor;Dell
 TRAP;setparam;vdFormatStarted;traps_reschedule_svc_enable;0
@@ -1507,7 +1537,7 @@ TRAP;setparam;vdFormatStarted;traps_comments;%s, virtual disk (%s) format starte
 TRAP;ADD;adFormatStarted;.1.3.6.1.4.1.674.10893.1.1.200.0.522
 TRAP;setparam;adFormatStarted;traps_name;adFormatStarted
 TRAP;setparam;adFormatStarted;traps_oid;.1.3.6.1.4.1.674.10893.1.1.200.0.522
-TRAP;setparam;adFormatStarted;traps_args;Array Manager Event: Array Disk format started: 
+TRAP;setparam;adFormatStarted;traps_args;Array Manager Event: Array Disk format started:
 TRAP;setparam;adFormatStarted;traps_status;1
 TRAP;setparam;adFormatStarted;vendor;Dell
 TRAP;setparam;adFormatStarted;traps_reschedule_svc_enable;0
@@ -1524,7 +1554,7 @@ TRAP;setparam;adFormatStarted;traps_comments;%s, %s format started.<br/>Variable
 TRAP;ADD;vdInitializeStarted;.1.3.6.1.4.1.674.10893.1.1.200.0.523
 TRAP;setparam;vdInitializeStarted;traps_name;vdInitializeStarted
 TRAP;setparam;vdInitializeStarted;traps_oid;.1.3.6.1.4.1.674.10893.1.1.200.0.523
-TRAP;setparam;vdInitializeStarted;traps_args;Array Manager Event: Virtual Disk initialization started: 
+TRAP;setparam;vdInitializeStarted;traps_args;Array Manager Event: Virtual Disk initialization started:
 TRAP;setparam;vdInitializeStarted;traps_status;0
 TRAP;setparam;vdInitializeStarted;vendor;Dell
 TRAP;setparam;vdInitializeStarted;traps_reschedule_svc_enable;0
@@ -1541,7 +1571,7 @@ TRAP;setparam;vdInitializeStarted;traps_comments;%s, virtual disk (%s) initializ
 TRAP;ADD;adInitializeStarted;.1.3.6.1.4.1.674.10893.1.1.200.0.524
 TRAP;setparam;adInitializeStarted;traps_name;adInitializeStarted
 TRAP;setparam;adInitializeStarted;traps_oid;.1.3.6.1.4.1.674.10893.1.1.200.0.524
-TRAP;setparam;adInitializeStarted;traps_args;Array Manager Event: Array Disk initialize started: 
+TRAP;setparam;adInitializeStarted;traps_args;Array Manager Event: Array Disk initialize started:
 TRAP;setparam;adInitializeStarted;traps_status;1
 TRAP;setparam;adInitializeStarted;vendor;Dell
 TRAP;setparam;adInitializeStarted;traps_reschedule_svc_enable;0
@@ -1558,7 +1588,7 @@ TRAP;setparam;adInitializeStarted;traps_comments;%s, %s initialize started.<br/>
 TRAP;ADD;vdReconfigStarted;.1.3.6.1.4.1.674.10893.1.1.200.0.525
 TRAP;setparam;vdReconfigStarted;traps_name;vdReconfigStarted
 TRAP;setparam;vdReconfigStarted;traps_oid;.1.3.6.1.4.1.674.10893.1.1.200.0.525
-TRAP;setparam;vdReconfigStarted;traps_args;Array Manager Event: Virtual Disk Reconfiguration started: 
+TRAP;setparam;vdReconfigStarted;traps_args;Array Manager Event: Virtual Disk Reconfiguration started:
 TRAP;setparam;vdReconfigStarted;traps_status;1
 TRAP;setparam;vdReconfigStarted;vendor;Dell
 TRAP;setparam;vdReconfigStarted;traps_reschedule_svc_enable;0
@@ -1575,7 +1605,7 @@ TRAP;setparam;vdReconfigStarted;traps_comments;%s, virtual disk (%s) reconfigura
 TRAP;ADD;vdRebuildStarted;.1.3.6.1.4.1.674.10893.1.1.200.0.526
 TRAP;setparam;vdRebuildStarted;traps_name;vdRebuildStarted
 TRAP;setparam;vdRebuildStarted;traps_oid;.1.3.6.1.4.1.674.10893.1.1.200.0.526
-TRAP;setparam;vdRebuildStarted;traps_args;Array Manager Event: Virtual Disk rebuild started: 
+TRAP;setparam;vdRebuildStarted;traps_args;Array Manager Event: Virtual Disk rebuild started:
 TRAP;setparam;vdRebuildStarted;traps_status;1
 TRAP;setparam;vdRebuildStarted;vendor;Dell
 TRAP;setparam;vdRebuildStarted;traps_reschedule_svc_enable;0
@@ -1592,7 +1622,7 @@ TRAP;setparam;vdRebuildStarted;traps_comments;%s, virtual disk (%s) rebuild star
 TRAP;ADD;adRebuildStarted;.1.3.6.1.4.1.674.10893.1.1.200.0.527
 TRAP;setparam;adRebuildStarted;traps_name;adRebuildStarted
 TRAP;setparam;adRebuildStarted;traps_oid;.1.3.6.1.4.1.674.10893.1.1.200.0.527
-TRAP;setparam;adRebuildStarted;traps_args;Array Manager Event: Array Disk rebuild started: 
+TRAP;setparam;adRebuildStarted;traps_args;Array Manager Event: Array Disk rebuild started:
 TRAP;setparam;adRebuildStarted;traps_status;1
 TRAP;setparam;adRebuildStarted;vendor;Dell
 TRAP;setparam;adRebuildStarted;traps_reschedule_svc_enable;0
@@ -1609,7 +1639,7 @@ TRAP;setparam;adRebuildStarted;traps_comments;%s, %s rebuild started.<br/>Variab
 TRAP;ADD;adDiagStarted;.1.3.6.1.4.1.674.10893.1.1.200.0.528
 TRAP;setparam;adDiagStarted;traps_name;adDiagStarted
 TRAP;setparam;adDiagStarted;traps_oid;.1.3.6.1.4.1.674.10893.1.1.200.0.528
-TRAP;setparam;adDiagStarted;traps_args;Array Manager Event: Array Disk diagnostics started: 
+TRAP;setparam;adDiagStarted;traps_args;Array Manager Event: Array Disk diagnostics started:
 TRAP;setparam;adDiagStarted;traps_status;1
 TRAP;setparam;adDiagStarted;vendor;Dell
 TRAP;setparam;adDiagStarted;traps_reschedule_svc_enable;0
@@ -1626,7 +1656,7 @@ TRAP;setparam;adDiagStarted;traps_comments;%s, %s diagnostics started.<br/>Varia
 TRAP;ADD;vdFormatCancelled;.1.3.6.1.4.1.674.10893.1.1.200.0.530
 TRAP;setparam;vdFormatCancelled;traps_name;vdFormatCancelled
 TRAP;setparam;vdFormatCancelled;traps_oid;.1.3.6.1.4.1.674.10893.1.1.200.0.530
-TRAP;setparam;vdFormatCancelled;traps_args;Array Manager Event: Virtual Disk format cancelled: 
+TRAP;setparam;vdFormatCancelled;traps_args;Array Manager Event: Virtual Disk format cancelled:
 TRAP;setparam;vdFormatCancelled;traps_status;1
 TRAP;setparam;vdFormatCancelled;vendor;Dell
 TRAP;setparam;vdFormatCancelled;traps_reschedule_svc_enable;0
@@ -1643,7 +1673,7 @@ TRAP;setparam;vdFormatCancelled;traps_comments;%s, virtual disk (%s) format canc
 TRAP;ADD;adFormatCancelled;.1.3.6.1.4.1.674.10893.1.1.200.0.531
 TRAP;setparam;adFormatCancelled;traps_name;adFormatCancelled
 TRAP;setparam;adFormatCancelled;traps_oid;.1.3.6.1.4.1.674.10893.1.1.200.0.531
-TRAP;setparam;adFormatCancelled;traps_args;Array Manager Event: Array Disk format cancelled: 
+TRAP;setparam;adFormatCancelled;traps_args;Array Manager Event: Array Disk format cancelled:
 TRAP;setparam;adFormatCancelled;traps_status;1
 TRAP;setparam;adFormatCancelled;vendor;Dell
 TRAP;setparam;adFormatCancelled;traps_reschedule_svc_enable;0
@@ -1660,7 +1690,7 @@ TRAP;setparam;adFormatCancelled;traps_comments;%s, %s format cancelled.<br/>Vari
 TRAP;ADD;vdInitializeCancelled;.1.3.6.1.4.1.674.10893.1.1.200.0.532
 TRAP;setparam;vdInitializeCancelled;traps_name;vdInitializeCancelled
 TRAP;setparam;vdInitializeCancelled;traps_oid;.1.3.6.1.4.1.674.10893.1.1.200.0.532
-TRAP;setparam;vdInitializeCancelled;traps_args;Array Manager Event: Virtual Disk initialization cancelled: 
+TRAP;setparam;vdInitializeCancelled;traps_args;Array Manager Event: Virtual Disk initialization cancelled:
 TRAP;setparam;vdInitializeCancelled;traps_status;1
 TRAP;setparam;vdInitializeCancelled;vendor;Dell
 TRAP;setparam;vdInitializeCancelled;traps_reschedule_svc_enable;0
@@ -1677,7 +1707,7 @@ TRAP;setparam;vdInitializeCancelled;traps_comments;%s, virtual disk (%s) initial
 TRAP;ADD;adInitializeCancelled;.1.3.6.1.4.1.674.10893.1.1.200.0.533
 TRAP;setparam;adInitializeCancelled;traps_name;adInitializeCancelled
 TRAP;setparam;adInitializeCancelled;traps_oid;.1.3.6.1.4.1.674.10893.1.1.200.0.533
-TRAP;setparam;adInitializeCancelled;traps_args;Array Manager Event: Array Disk initialize cancelled: 
+TRAP;setparam;adInitializeCancelled;traps_args;Array Manager Event: Array Disk initialize cancelled:
 TRAP;setparam;adInitializeCancelled;traps_status;1
 TRAP;setparam;adInitializeCancelled;vendor;Dell
 TRAP;setparam;adInitializeCancelled;traps_reschedule_svc_enable;0
@@ -1694,7 +1724,7 @@ TRAP;setparam;adInitializeCancelled;traps_comments;%s, %s initialize cancelled.<
 TRAP;ADD;vdReconfigCancelled;.1.3.6.1.4.1.674.10893.1.1.200.0.534
 TRAP;setparam;vdReconfigCancelled;traps_name;vdReconfigCancelled
 TRAP;setparam;vdReconfigCancelled;traps_oid;.1.3.6.1.4.1.674.10893.1.1.200.0.534
-TRAP;setparam;vdReconfigCancelled;traps_args;Array Manager Event: Virtual Disk Reconfiguration cancelled: 
+TRAP;setparam;vdReconfigCancelled;traps_args;Array Manager Event: Virtual Disk Reconfiguration cancelled:
 TRAP;setparam;vdReconfigCancelled;traps_status;1
 TRAP;setparam;vdReconfigCancelled;vendor;Dell
 TRAP;setparam;vdReconfigCancelled;traps_reschedule_svc_enable;0
@@ -1711,7 +1741,7 @@ TRAP;setparam;vdReconfigCancelled;traps_comments;%s, virtual disk (%s) reconfigu
 TRAP;ADD;vdRebuildCancelled;.1.3.6.1.4.1.674.10893.1.1.200.0.535
 TRAP;setparam;vdRebuildCancelled;traps_name;vdRebuildCancelled
 TRAP;setparam;vdRebuildCancelled;traps_oid;.1.3.6.1.4.1.674.10893.1.1.200.0.535
-TRAP;setparam;vdRebuildCancelled;traps_args;Array Manager Event: Virtual Disk rebuild cancelled: 
+TRAP;setparam;vdRebuildCancelled;traps_args;Array Manager Event: Virtual Disk rebuild cancelled:
 TRAP;setparam;vdRebuildCancelled;traps_status;1
 TRAP;setparam;vdRebuildCancelled;vendor;Dell
 TRAP;setparam;vdRebuildCancelled;traps_reschedule_svc_enable;0
@@ -1728,7 +1758,7 @@ TRAP;setparam;vdRebuildCancelled;traps_comments;%s, virtual disk (%s) rebuild ca
 TRAP;ADD;adRebuildCancelled;.1.3.6.1.4.1.674.10893.1.1.200.0.536
 TRAP;setparam;adRebuildCancelled;traps_name;adRebuildCancelled
 TRAP;setparam;adRebuildCancelled;traps_oid;.1.3.6.1.4.1.674.10893.1.1.200.0.536
-TRAP;setparam;adRebuildCancelled;traps_args;Array Manager Event: Array Disk rebuild cancelled: 
+TRAP;setparam;adRebuildCancelled;traps_args;Array Manager Event: Array Disk rebuild cancelled:
 TRAP;setparam;adRebuildCancelled;traps_status;1
 TRAP;setparam;adRebuildCancelled;vendor;Dell
 TRAP;setparam;adRebuildCancelled;traps_reschedule_svc_enable;0
@@ -1745,7 +1775,7 @@ TRAP;setparam;adRebuildCancelled;traps_comments;%s, %s rebuild cancelled.<br/>Va
 TRAP;ADD;adDiagCancelled;.1.3.6.1.4.1.674.10893.1.1.200.0.537
 TRAP;setparam;adDiagCancelled;traps_name;adDiagCancelled
 TRAP;setparam;adDiagCancelled;traps_oid;.1.3.6.1.4.1.674.10893.1.1.200.0.537
-TRAP;setparam;adDiagCancelled;traps_args;Array Manager Event: Array Disk diagnostics cancelled: 
+TRAP;setparam;adDiagCancelled;traps_args;Array Manager Event: Array Disk diagnostics cancelled:
 TRAP;setparam;adDiagCancelled;traps_status;1
 TRAP;setparam;adDiagCancelled;vendor;Dell
 TRAP;setparam;adDiagCancelled;traps_reschedule_svc_enable;0
@@ -1762,7 +1792,7 @@ TRAP;setparam;adDiagCancelled;traps_comments;%s, %s diagnostics cancelled.<br/>V
 TRAP;ADD;vdFormatFailed;.1.3.6.1.4.1.674.10893.1.1.200.0.539
 TRAP;setparam;vdFormatFailed;traps_name;vdFormatFailed
 TRAP;setparam;vdFormatFailed;traps_oid;.1.3.6.1.4.1.674.10893.1.1.200.0.539
-TRAP;setparam;vdFormatFailed;traps_args;Array Manager Event: Virtual Disk format failed: 
+TRAP;setparam;vdFormatFailed;traps_args;Array Manager Event: Virtual Disk format failed:
 TRAP;setparam;vdFormatFailed;traps_status;3
 TRAP;setparam;vdFormatFailed;vendor;Dell
 TRAP;setparam;vdFormatFailed;traps_reschedule_svc_enable;0
@@ -1779,7 +1809,7 @@ TRAP;setparam;vdFormatFailed;traps_comments;%s, virtual disk (%s) format failed.
 TRAP;ADD;adFormatFailed;.1.3.6.1.4.1.674.10893.1.1.200.0.540
 TRAP;setparam;adFormatFailed;traps_name;adFormatFailed
 TRAP;setparam;adFormatFailed;traps_oid;.1.3.6.1.4.1.674.10893.1.1.200.0.540
-TRAP;setparam;adFormatFailed;traps_args;Array Manager Event: Array Disk format failed: 
+TRAP;setparam;adFormatFailed;traps_args;Array Manager Event: Array Disk format failed:
 TRAP;setparam;adFormatFailed;traps_status;3
 TRAP;setparam;adFormatFailed;vendor;Dell
 TRAP;setparam;adFormatFailed;traps_reschedule_svc_enable;0
@@ -1796,7 +1826,7 @@ TRAP;setparam;adFormatFailed;traps_comments;%s, %s format failed.<br/>Variables:
 TRAP;ADD;vdInitializeFailed;.1.3.6.1.4.1.674.10893.1.1.200.0.541
 TRAP;setparam;vdInitializeFailed;traps_name;vdInitializeFailed
 TRAP;setparam;vdInitializeFailed;traps_oid;.1.3.6.1.4.1.674.10893.1.1.200.0.541
-TRAP;setparam;vdInitializeFailed;traps_args;Array Manager Event: Virtual Disk initialization Failed: 
+TRAP;setparam;vdInitializeFailed;traps_args;Array Manager Event: Virtual Disk initialization Failed:
 TRAP;setparam;vdInitializeFailed;traps_status;3
 TRAP;setparam;vdInitializeFailed;vendor;Dell
 TRAP;setparam;vdInitializeFailed;traps_reschedule_svc_enable;0
@@ -1813,7 +1843,7 @@ TRAP;setparam;vdInitializeFailed;traps_comments;%s, virtual disk (%s) initializa
 TRAP;ADD;adInitializeFailed;.1.3.6.1.4.1.674.10893.1.1.200.0.542
 TRAP;setparam;adInitializeFailed;traps_name;adInitializeFailed
 TRAP;setparam;adInitializeFailed;traps_oid;.1.3.6.1.4.1.674.10893.1.1.200.0.542
-TRAP;setparam;adInitializeFailed;traps_args;Array Manager Event: Array Disk initialize failed: 
+TRAP;setparam;adInitializeFailed;traps_args;Array Manager Event: Array Disk initialize failed:
 TRAP;setparam;adInitializeFailed;traps_status;3
 TRAP;setparam;adInitializeFailed;vendor;Dell
 TRAP;setparam;adInitializeFailed;traps_reschedule_svc_enable;0
@@ -1830,7 +1860,7 @@ TRAP;setparam;adInitializeFailed;traps_comments;%s, %s initialize failed.<br/>Va
 TRAP;ADD;vdReconfigFailed;.1.3.6.1.4.1.674.10893.1.1.200.0.543
 TRAP;setparam;vdReconfigFailed;traps_name;vdReconfigFailed
 TRAP;setparam;vdReconfigFailed;traps_oid;.1.3.6.1.4.1.674.10893.1.1.200.0.543
-TRAP;setparam;vdReconfigFailed;traps_args;Array Manager Event: Virtual Disk Reconfiguration failed: 
+TRAP;setparam;vdReconfigFailed;traps_args;Array Manager Event: Virtual Disk Reconfiguration failed:
 TRAP;setparam;vdReconfigFailed;traps_status;3
 TRAP;setparam;vdReconfigFailed;vendor;Dell
 TRAP;setparam;vdReconfigFailed;traps_reschedule_svc_enable;0
@@ -1847,7 +1877,7 @@ TRAP;setparam;vdReconfigFailed;traps_comments;%s, virtual disk (%s) reconfigurat
 TRAP;ADD;vdRebuildFailed;.1.3.6.1.4.1.674.10893.1.1.200.0.544
 TRAP;setparam;vdRebuildFailed;traps_name;vdRebuildFailed
 TRAP;setparam;vdRebuildFailed;traps_oid;.1.3.6.1.4.1.674.10893.1.1.200.0.544
-TRAP;setparam;vdRebuildFailed;traps_args;Array Manager Event: Virtual Disk rebuild failed: 
+TRAP;setparam;vdRebuildFailed;traps_args;Array Manager Event: Virtual Disk rebuild failed:
 TRAP;setparam;vdRebuildFailed;traps_status;3
 TRAP;setparam;vdRebuildFailed;vendor;Dell
 TRAP;setparam;vdRebuildFailed;traps_reschedule_svc_enable;0
@@ -1864,7 +1894,7 @@ TRAP;setparam;vdRebuildFailed;traps_comments;%s, virtual disk (%s) rebuild faile
 TRAP;ADD;adRebuildFailed;.1.3.6.1.4.1.674.10893.1.1.200.0.545
 TRAP;setparam;adRebuildFailed;traps_name;adRebuildFailed
 TRAP;setparam;adRebuildFailed;traps_oid;.1.3.6.1.4.1.674.10893.1.1.200.0.545
-TRAP;setparam;adRebuildFailed;traps_args;Array Manager Event: Array Disk rebuild failed: 
+TRAP;setparam;adRebuildFailed;traps_args;Array Manager Event: Array Disk rebuild failed:
 TRAP;setparam;adRebuildFailed;traps_status;3
 TRAP;setparam;adRebuildFailed;vendor;Dell
 TRAP;setparam;adRebuildFailed;traps_reschedule_svc_enable;0
@@ -1881,7 +1911,7 @@ TRAP;setparam;adRebuildFailed;traps_comments;%s, %s rebuild failed.<br/>Variable
 TRAP;ADD;adDiagFailed;.1.3.6.1.4.1.674.10893.1.1.200.0.546
 TRAP;setparam;adDiagFailed;traps_name;adDiagFailed
 TRAP;setparam;adDiagFailed;traps_oid;.1.3.6.1.4.1.674.10893.1.1.200.0.546
-TRAP;setparam;adDiagFailed;traps_args;Array Manager Event: Array Disk diagnostics failed: 
+TRAP;setparam;adDiagFailed;traps_args;Array Manager Event: Array Disk diagnostics failed:
 TRAP;setparam;adDiagFailed;traps_status;3
 TRAP;setparam;adDiagFailed;vendor;Dell
 TRAP;setparam;adDiagFailed;traps_reschedule_svc_enable;0
@@ -1898,7 +1928,7 @@ TRAP;setparam;adDiagFailed;traps_comments;%s, %s diagnostics failed.<br/>Variabl
 TRAP;ADD;vdFormatCompleted;.1.3.6.1.4.1.674.10893.1.1.200.0.548
 TRAP;setparam;vdFormatCompleted;traps_name;vdFormatCompleted
 TRAP;setparam;vdFormatCompleted;traps_oid;.1.3.6.1.4.1.674.10893.1.1.200.0.548
-TRAP;setparam;vdFormatCompleted;traps_args;Array Manager Event: Virtual Disk format completed: 
+TRAP;setparam;vdFormatCompleted;traps_args;Array Manager Event: Virtual Disk format completed:
 TRAP;setparam;vdFormatCompleted;traps_status;0
 TRAP;setparam;vdFormatCompleted;vendor;Dell
 TRAP;setparam;vdFormatCompleted;traps_reschedule_svc_enable;0
@@ -1915,7 +1945,7 @@ TRAP;setparam;vdFormatCompleted;traps_comments;%s, virtual disk (%s) format comp
 TRAP;ADD;adFormatCompleted;.1.3.6.1.4.1.674.10893.1.1.200.0.549
 TRAP;setparam;adFormatCompleted;traps_name;adFormatCompleted
 TRAP;setparam;adFormatCompleted;traps_oid;.1.3.6.1.4.1.674.10893.1.1.200.0.549
-TRAP;setparam;adFormatCompleted;traps_args;Array Manager Event: Array Disk format completed: 
+TRAP;setparam;adFormatCompleted;traps_args;Array Manager Event: Array Disk format completed:
 TRAP;setparam;adFormatCompleted;traps_status;0
 TRAP;setparam;adFormatCompleted;vendor;Dell
 TRAP;setparam;adFormatCompleted;traps_reschedule_svc_enable;0
@@ -1932,7 +1962,7 @@ TRAP;setparam;adFormatCompleted;traps_comments;%s, %s format completed.<br/>Vari
 TRAP;ADD;vdInitializeCompleted;.1.3.6.1.4.1.674.10893.1.1.200.0.550
 TRAP;setparam;vdInitializeCompleted;traps_name;vdInitializeCompleted
 TRAP;setparam;vdInitializeCompleted;traps_oid;.1.3.6.1.4.1.674.10893.1.1.200.0.550
-TRAP;setparam;vdInitializeCompleted;traps_args;Array Manager Event: Virtual Disk initialization completed: 
+TRAP;setparam;vdInitializeCompleted;traps_args;Array Manager Event: Virtual Disk initialization completed:
 TRAP;setparam;vdInitializeCompleted;traps_status;0
 TRAP;setparam;vdInitializeCompleted;vendor;Dell
 TRAP;setparam;vdInitializeCompleted;traps_reschedule_svc_enable;0
@@ -1949,7 +1979,7 @@ TRAP;setparam;vdInitializeCompleted;traps_comments;%s, virtual disk (%s) initial
 TRAP;ADD;adInitializeCompleted;.1.3.6.1.4.1.674.10893.1.1.200.0.551
 TRAP;setparam;adInitializeCompleted;traps_name;adInitializeCompleted
 TRAP;setparam;adInitializeCompleted;traps_oid;.1.3.6.1.4.1.674.10893.1.1.200.0.551
-TRAP;setparam;adInitializeCompleted;traps_args;Array Manager Event: Array Disk initialize completed: 
+TRAP;setparam;adInitializeCompleted;traps_args;Array Manager Event: Array Disk initialize completed:
 TRAP;setparam;adInitializeCompleted;traps_status;0
 TRAP;setparam;adInitializeCompleted;vendor;Dell
 TRAP;setparam;adInitializeCompleted;traps_reschedule_svc_enable;0
@@ -1966,7 +1996,7 @@ TRAP;setparam;adInitializeCompleted;traps_comments;%s, %s initialize completed.<
 TRAP;ADD;vdReconfigCompleted;.1.3.6.1.4.1.674.10893.1.1.200.0.552
 TRAP;setparam;vdReconfigCompleted;traps_name;vdReconfigCompleted
 TRAP;setparam;vdReconfigCompleted;traps_oid;.1.3.6.1.4.1.674.10893.1.1.200.0.552
-TRAP;setparam;vdReconfigCompleted;traps_args;Array Manager Event: Virtual Disk Reconfiguration completed: 
+TRAP;setparam;vdReconfigCompleted;traps_args;Array Manager Event: Virtual Disk Reconfiguration completed:
 TRAP;setparam;vdReconfigCompleted;traps_status;1
 TRAP;setparam;vdReconfigCompleted;vendor;Dell
 TRAP;setparam;vdReconfigCompleted;traps_reschedule_svc_enable;0
@@ -1983,7 +2013,7 @@ TRAP;setparam;vdReconfigCompleted;traps_comments;%s, virtual disk (%s) reconfigu
 TRAP;ADD;vdRebuildCompleted;.1.3.6.1.4.1.674.10893.1.1.200.0.553
 TRAP;setparam;vdRebuildCompleted;traps_name;vdRebuildCompleted
 TRAP;setparam;vdRebuildCompleted;traps_oid;.1.3.6.1.4.1.674.10893.1.1.200.0.553
-TRAP;setparam;vdRebuildCompleted;traps_args;Array Manager Event: Virtual Disk rebuild completed: 
+TRAP;setparam;vdRebuildCompleted;traps_args;Array Manager Event: Virtual Disk rebuild completed:
 TRAP;setparam;vdRebuildCompleted;traps_status;0
 TRAP;setparam;vdRebuildCompleted;vendor;Dell
 TRAP;setparam;vdRebuildCompleted;traps_reschedule_svc_enable;0
@@ -2000,7 +2030,7 @@ TRAP;setparam;vdRebuildCompleted;traps_comments;%s, virtual disk (%s) rebuild co
 TRAP;ADD;adRebuildCompleted;.1.3.6.1.4.1.674.10893.1.1.200.0.554
 TRAP;setparam;adRebuildCompleted;traps_name;adRebuildCompleted
 TRAP;setparam;adRebuildCompleted;traps_oid;.1.3.6.1.4.1.674.10893.1.1.200.0.554
-TRAP;setparam;adRebuildCompleted;traps_args;Array Manager Event: Array Disk rebuild completed: 
+TRAP;setparam;adRebuildCompleted;traps_args;Array Manager Event: Array Disk rebuild completed:
 TRAP;setparam;adRebuildCompleted;traps_status;0
 TRAP;setparam;adRebuildCompleted;vendor;Dell
 TRAP;setparam;adRebuildCompleted;traps_reschedule_svc_enable;0
@@ -2017,7 +2047,7 @@ TRAP;setparam;adRebuildCompleted;traps_comments;%s, %s rebuild completed.<br/>Va
 TRAP;ADD;adDiagCompleted;.1.3.6.1.4.1.674.10893.1.1.200.0.555
 TRAP;setparam;adDiagCompleted;traps_name;adDiagCompleted
 TRAP;setparam;adDiagCompleted;traps_oid;.1.3.6.1.4.1.674.10893.1.1.200.0.555
-TRAP;setparam;adDiagCompleted;traps_args;Array Manager Event: Array Disk diagnostics completed: 
+TRAP;setparam;adDiagCompleted;traps_args;Array Manager Event: Array Disk diagnostics completed:
 TRAP;setparam;adDiagCompleted;traps_status;0
 TRAP;setparam;adDiagCompleted;vendor;Dell
 TRAP;setparam;adDiagCompleted;traps_reschedule_svc_enable;0
@@ -2034,7 +2064,7 @@ TRAP;setparam;adDiagCompleted;traps_comments;%s, %s diagnostics completed.<br/>V
 TRAP;ADD;percPredictiveFailure;.1.3.6.1.4.1.674.10893.1.1.200.0.570
 TRAP;setparam;percPredictiveFailure;traps_name;percPredictiveFailure
 TRAP;setparam;percPredictiveFailure;traps_oid;.1.3.6.1.4.1.674.10893.1.1.200.0.570
-TRAP;setparam;percPredictiveFailure;traps_args;Array Manager Event: Predictive Failure reported: 
+TRAP;setparam;percPredictiveFailure;traps_args;Array Manager Event: Predictive Failure reported:
 TRAP;setparam;percPredictiveFailure;traps_status;1
 TRAP;setparam;percPredictiveFailure;vendor;Dell
 TRAP;setparam;percPredictiveFailure;traps_reschedule_svc_enable;0
@@ -2051,7 +2081,7 @@ TRAP;setparam;percPredictiveFailure;traps_comments;%s, %s reported predictive fa
 TRAP;ADD;percSCSISenseData;.1.3.6.1.4.1.674.10893.1.1.200.0.571
 TRAP;setparam;percSCSISenseData;traps_name;percSCSISenseData
 TRAP;setparam;percSCSISenseData;traps_oid;.1.3.6.1.4.1.674.10893.1.1.200.0.571
-TRAP;setparam;percSCSISenseData;traps_args;Array Manager Event: SCSI sense data: 
+TRAP;setparam;percSCSISenseData;traps_args;Array Manager Event: SCSI sense data:
 TRAP;setparam;percSCSISenseData;traps_status;1
 TRAP;setparam;percSCSISenseData;vendor;Dell
 TRAP;setparam;percSCSISenseData;traps_reschedule_svc_enable;0
@@ -2068,7 +2098,7 @@ TRAP;setparam;percSCSISenseData;traps_comments;%s, %s SCSI sense failure.<br/>Va
 TRAP;ADD;perc2SmartFPTExceeded;.1.3.6.1.4.1.674.10893.1.1.200.0.585
 TRAP;setparam;perc2SmartFPTExceeded;traps_name;perc2SmartFPTExceeded
 TRAP;setparam;perc2SmartFPTExceeded;traps_oid;.1.3.6.1.4.1.674.10893.1.1.200.0.585
-TRAP;setparam;perc2SmartFPTExceeded;traps_args;Array Manager Event: Smart FPT Exceeded: 
+TRAP;setparam;perc2SmartFPTExceeded;traps_args;Array Manager Event: Smart FPT Exceeded:
 TRAP;setparam;perc2SmartFPTExceeded;traps_status;0
 TRAP;setparam;perc2SmartFPTExceeded;vendor;Dell
 TRAP;setparam;perc2SmartFPTExceeded;traps_reschedule_svc_enable;0
@@ -2085,7 +2115,7 @@ TRAP;setparam;perc2SmartFPTExceeded;traps_comments;%s SMART:FPT EXCEEDED on %s.<
 TRAP;ADD;perc2SmartConfigChange;.1.3.6.1.4.1.674.10893.1.1.200.0.586
 TRAP;setparam;perc2SmartConfigChange;traps_name;perc2SmartConfigChange
 TRAP;setparam;perc2SmartConfigChange;traps_oid;.1.3.6.1.4.1.674.10893.1.1.200.0.586
-TRAP;setparam;perc2SmartConfigChange;traps_args;Array Manager Event: Smart Config Change: 
+TRAP;setparam;perc2SmartConfigChange;traps_args;Array Manager Event: Smart Config Change:
 TRAP;setparam;perc2SmartConfigChange;traps_status;1
 TRAP;setparam;perc2SmartConfigChange;vendor;Dell
 TRAP;setparam;perc2SmartConfigChange;traps_reschedule_svc_enable;0
@@ -2102,7 +2132,7 @@ TRAP;setparam;perc2SmartConfigChange;traps_comments;%s SMART configuration chang
 TRAP;ADD;perc2SmartWarning;.1.3.6.1.4.1.674.10893.1.1.200.0.587
 TRAP;setparam;perc2SmartWarning;traps_name;perc2SmartWarning
 TRAP;setparam;perc2SmartWarning;traps_oid;.1.3.6.1.4.1.674.10893.1.1.200.0.587
-TRAP;setparam;perc2SmartWarning;traps_args;Array Manager Event: Smart Warning: 
+TRAP;setparam;perc2SmartWarning;traps_args;Array Manager Event: Smart Warning:
 TRAP;setparam;perc2SmartWarning;traps_status;1
 TRAP;setparam;perc2SmartWarning;vendor;Dell
 TRAP;setparam;perc2SmartWarning;traps_reschedule_svc_enable;0
@@ -2119,7 +2149,7 @@ TRAP;setparam;perc2SmartWarning;traps_comments;%s SMART Warning on %s.<br/>Varia
 TRAP;ADD;perc2SmartWarningTemp;.1.3.6.1.4.1.674.10893.1.1.200.0.588
 TRAP;setparam;perc2SmartWarningTemp;traps_name;perc2SmartWarningTemp
 TRAP;setparam;perc2SmartWarningTemp;traps_oid;.1.3.6.1.4.1.674.10893.1.1.200.0.588
-TRAP;setparam;perc2SmartWarningTemp;traps_args;Array Manager Event: Smart warning temperature: 
+TRAP;setparam;perc2SmartWarningTemp;traps_args;Array Manager Event: Smart warning temperature:
 TRAP;setparam;perc2SmartWarningTemp;traps_status;1
 TRAP;setparam;perc2SmartWarningTemp;vendor;Dell
 TRAP;setparam;perc2SmartWarningTemp;traps_reschedule_svc_enable;0
@@ -2136,7 +2166,7 @@ TRAP;setparam;perc2SmartWarningTemp;traps_comments;%s SMART Warning temperature 
 TRAP;ADD;perc2SmartWarningDegraded;.1.3.6.1.4.1.674.10893.1.1.200.0.589
 TRAP;setparam;perc2SmartWarningDegraded;traps_name;perc2SmartWarningDegraded
 TRAP;setparam;perc2SmartWarningDegraded;traps_oid;.1.3.6.1.4.1.674.10893.1.1.200.0.589
-TRAP;setparam;perc2SmartWarningDegraded;traps_args;Array Manager Event: Smart warning degraded: 
+TRAP;setparam;perc2SmartWarningDegraded;traps_args;Array Manager Event: Smart warning degraded:
 TRAP;setparam;perc2SmartWarningDegraded;traps_status;1
 TRAP;setparam;perc2SmartWarningDegraded;vendor;Dell
 TRAP;setparam;perc2SmartWarningDegraded;traps_reschedule_svc_enable;0
@@ -2153,7 +2183,7 @@ TRAP;setparam;perc2SmartWarningDegraded;traps_comments;%s SMART warning degraded
 TRAP;ADD;perc2SmartFPTExceededTest;.1.3.6.1.4.1.674.10893.1.1.200.0.590
 TRAP;setparam;perc2SmartFPTExceededTest;traps_name;perc2SmartFPTExceededTest
 TRAP;setparam;perc2SmartFPTExceededTest;traps_oid;.1.3.6.1.4.1.674.10893.1.1.200.0.590
-TRAP;setparam;perc2SmartFPTExceededTest;traps_args;    Internal Controller has encountered Strong-ARM processor specific error$1 
+TRAP;setparam;perc2SmartFPTExceededTest;traps_args;    Internal Controller has encountered Strong-ARM processor specific error$1
 TRAP;setparam;perc2SmartFPTExceededTest;traps_status;1
 TRAP;setparam;perc2SmartFPTExceededTest;vendor;Dell
 TRAP;setparam;perc2SmartFPTExceededTest;traps_reschedule_svc_enable;0
@@ -4299,4 +4329,3 @@ ACLGROUP;SETACTION;ALL;Simple User;
 ACLGROUP;SETRESOURCE;ALL;All Resources;
 ACLGROUP;SETCONTACT;ALL;test_contact;
 ACLGROUP;SETCONTACTGROUP;ALL;Guest|test_contact-group;
-
