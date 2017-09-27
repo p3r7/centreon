@@ -34,6 +34,8 @@
  *
  */
 
+require_once __DIR__ . '/centreonUtils.class.php';
+
 class CentreonAuth
 {
     /*
@@ -53,6 +55,11 @@ class CentreonAuth
 
     // Web UI or API
     protected $source;
+
+    /**
+     * @var CentreonUtils
+     */
+    protected $utilsObject;
 
     /*
      * Flags
@@ -88,6 +95,8 @@ class CentreonAuth
     public function __construct($username, $password, $autologin, $pearDB, $CentreonLog, $encryptType = 1, $token = "", $source = "WEB")
     {
         global $centreon_crypt;
+
+        $this->utilsObject = new CentreonUtils();
 
         $this->cryptPossibilities = array('MD5', 'SHA1');
         $this->CentreonLog = $CentreonLog;
@@ -146,6 +155,11 @@ class CentreonAuth
         if ((strlen($password) == 0 || $password == "") && $token == "") {
             $this->passwdOk = 0;
             return;
+        }
+
+        $algo = $this->utilsObject->detectPassPattern($this->userInfos["contact_passwd"]);
+        if (!$algo) {
+            $this->userInfos["contact_passwd"] = 'md5__' . $this->userInfos["contact_passwd"];
         }
 
         if ($this->userInfos["contact_auth_type"] == "ldap" && $this->autologin == 0) {
@@ -208,13 +222,17 @@ class CentreonAuth
             }
         } elseif ($this->userInfos["contact_auth_type"] == ""
             || $this->userInfos["contact_auth_type"] == "local" || $this->autologin) {
+
             if ($this->autologin && $this->userInfos["contact_autologin_key"]
                 && $this->userInfos["contact_autologin_key"] == $token) {
                 $this->passwdOk = 1;
             } elseif (!empty($password) && $this->userInfos["contact_passwd"] == $password && $this->autologin) {
                 $this->passwdOk = 1;
-            } elseif (!empty($password)
-                    && $this->userInfos["contact_passwd"] == $this->myCrypt($password) && $this->autologin == 0) {
+            } elseif (
+                !empty($password) &&
+                $this->userInfos["contact_passwd"] == $this->myCrypt($password) &&
+                $this->autologin == 0
+            ) {
                 $this->passwdOk = 1;
             } else {
                 $this->passwdOk = 0;
@@ -268,6 +286,7 @@ class CentreonAuth
                 /*
                  * Check password matching
                  */
+
                 $this->getCryptFunction();
                 $this->checkPassword($password, $token);
 
@@ -342,16 +361,21 @@ class CentreonAuth
      */
     protected function myCrypt($str)
     {
-        switch ($this->cryptEngine) {
-            case 1:
-                return md5($str);
-                break;
-            case 2:
-                return sha1($str);
-                break;
-            default:
-                return md5($str);
-                break;
+        $algo = $this->utilsObject->detectPassPattern($str);
+        if(!$algo){
+            switch ($this->cryptEngine) {
+                case 1:
+                    return $this->utilsObject->encodePass($str, 'md5');
+                    break;
+                case 2:
+                    return $this->utilsObject->encodePass($str, 'sha1');
+                    break;
+                default:
+                    return $this->utilsObject->encodePass($str, 'md5');
+                    break;
+            }
+        } else {
+            return $str;
         }
     }
 

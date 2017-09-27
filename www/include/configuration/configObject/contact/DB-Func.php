@@ -37,6 +37,9 @@ if (!isset($centreon)) {
     exit();
 }
 
+
+require_once _CENTREON_PATH_ . '/www/class/centreonUtils.class.php';
+
 /**
  *
  * Test that a contact doesn't exists
@@ -380,6 +383,8 @@ function insertContact($ret = array())
 {
     global $form, $pearDB, $centreon, $encryptType;
 
+    $utilsObject = new CentreonUtils();
+
     if (!count($ret)) {
         $ret = $form->getSubmitValues();
     }
@@ -402,13 +407,24 @@ function insertContact($ret = array())
     isset($ret["contact_alias"]) && $ret["contact_alias"] != null ? $rq .= "'" . $ret["contact_alias"] . "', " : $rq .= "NULL, ";
     isset($ret["contact_autologin_key"]) && $ret["contact_autologin_key"] != null ? $rq .= "'" . htmlentities($ret["contact_autologin_key"], ENT_QUOTES) . "', " : $rq .= "NULL, ";
     if ($encryptType == 1) {
-        isset($ret["contact_passwd"]) && $ret["contact_passwd"] != null ? $rq .= "'" . md5($ret["contact_passwd"]) . "', " : $rq .= "NULL, ";
+        if (isset($ret["contact_passwd"]) && $ret["contact_passwd"] != null){
+            $rq .= "'" . $utilsObject->encodePass($ret["contact_passwd"], 'md5') . "', " ;
+        } else {
+            $rq .= "null, ";
+        }
     } elseif ($encryptType == 2) {
-        isset($ret["contact_passwd"]) && $ret["contact_passwd"] != null ? $rq .= "'" . sha1($ret["contact_passwd"]) . "', " : $rq .= "NULL, ";
+        if (isset($ret["contact_passwd"]) && $ret["contact_passwd"] != null){
+            $rq .= "'" . $utilsObject->encodePass($ret["contact_passwd"], 'sha1') . "', " ;
+        } else {
+            $rq .= "null, ";
+        }
     } else {
-        isset($ret["contact_passwd"]) && $ret["contact_passwd"] != null ? $rq .= "'" . md5($ret["contact_passwd"]) . "', " : $rq .= "NULL, ";
+        if (isset($ret["contact_passwd"]) && $ret["contact_passwd"] != null){
+            $rq .= "'" . $utilsObject->encodePass($ret["contact_passwd"], 'md5') . "', " ;
+        } else {
+            $rq .= "null, ";
+        }
     }
-
     isset($ret["contact_lang"]) && $ret["contact_lang"] != null ? $rq .= "'" . htmlentities($ret["contact_lang"], ENT_QUOTES, "UTF-8") . "', " : $rq .= "NULL, ";
     isset($ret["contact_template_id"]) && $ret["contact_template_id"] != null ? $rq .= "'" . htmlentities($ret["contact_template_id"], ENT_QUOTES, "UTF-8") . "', " : $rq .= "NULL, ";
     isset($ret["contact_hostNotifOpts"]) && $ret["contact_hostNotifOpts"] != null ? $rq .= "'" . implode(",", array_keys($ret["contact_hostNotifOpts"])) . "', " : $rq .= "NULL, ";
@@ -445,11 +461,11 @@ function insertContact($ret = array())
 
     if (isset($ret["contact_passwd"])) {
         if ($encryptType == 1) {
-            $ret["contact_passwd"] = md5($ret["contact_passwd"]);
+            $ret["contact_passwd"] = $utilsObject->encodePass($ret["contact_passwd"], 'md5');
         } elseif ($encryptType == 2) {
-            $ret["contact_passwd"] = sha1($ret["contact_passwd"]);
+            $ret["contact_passwd"] = $utilsObject->encodePass($ret["contact_passwd"], 'sha1');
         } else {
-            $ret["contact_passwd"] = md5($ret["contact_passwd"]);
+            $ret["contact_passwd"] = $utilsObject->encodePass($ret["contact_passwd"], 'md5');
         }
     }
     
@@ -468,6 +484,8 @@ function updateContact($contact_id = null, $from_MC = false)
     }
     $ret = array();
     $ret = $form->getSubmitValues();
+
+    $utilsObject = new CentreonUtils();
 
     $ret["contact_name"] = $centreon->checkIllegalChar($ret["contact_name"]);
 
@@ -488,11 +506,11 @@ function updateContact($contact_id = null, $from_MC = false)
     }
     if (isset($ret["contact_passwd"]) && $ret["contact_passwd"]) {
         if ($encryptType == 1) {
-            $rq .= "contact_passwd = '" . md5($ret["contact_passwd"]) . "', ";
+            $rq .= "contact_passwd = '" . $utilsObject->encodePass($ret["contact_passwd"], 'md5') . "', ";
         } elseif ($encryptType == 2) {
-            $rq .= "contact_passwd = '" . sha1($ret["contact_passwd"]) . "', ";
+            $rq .= "contact_passwd = '" . $utilsObject->encodePass($ret["contact_passwd"], 'sha1') . "', ";
         } else {
-            $rq .= "contact_passwd = '" . md5($ret["contact_passwd"]) . "', ";
+            $rq .= "contact_passwd = '" . $utilsObject->encodePass($ret["contact_passwd"], 'md5') . "', ";
         }
     }
     $rq .= "contact_lang = ";
@@ -550,11 +568,11 @@ function updateContact($contact_id = null, $from_MC = false)
     }
     
     if ($encryptType == 1) {
-        $ret["contact_passwd"] = md5($ret["contact_passwd"]);
+        $ret["contact_passwd"] = $utilsObject->encodePass($ret["contact_passwd"], 'md5');
     } elseif ($encryptType == 2) {
-        $ret["contact_passwd"] = sha1($ret["contact_passwd"]);
+        $ret["contact_passwd"] = $utilsObject->encodePass($ret["contact_passwd"], 'sha1');
     } elseif (isset($ret['contact_passwd'])) {
-        $ret["contact_passwd"] = md5($ret["contact_passwd"]);
+        $ret["contact_passwd"] = $utilsObject->encodePass($ret["contact_passwd"], 'md5');
     }
 
     /* Prepare value for changelog */
@@ -569,6 +587,8 @@ function updateContact_MC($contact_id = null)
     if (!$contact_id) {
         return;
     }
+
+    $utilsObject = new CentreonUtils();
     
     $ret = array();
     $ret = $form->getSubmitValues();
@@ -581,11 +601,11 @@ function updateContact_MC($contact_id = null)
     }
     if (isset($ret["contact_passwd"]) && $ret["contact_passwd"]) {
         if ($encryptType == 1) {
-            $rq .= "contact_passwd = '" . md5($ret["contact_passwd"]) . "', ";
+            $rq .= "contact_passwd = '" . $utilsObject->encodePass($ret["contact_passwd"], 'md5') . "', ";
         } elseif ($encryptType == 2) {
-            $rq .= "contact_passwd = '" . sha1($ret["contact_passwd"]) . "', ";
+            $rq .= "contact_passwd = '" . $utilsObject->encodePass($ret["contact_passwd"], 'sha1') . "', ";
         } else {
-            $rq .= "contact_passwd = '" . md5($ret["contact_passwd"]) . "', ";
+            $rq .= "contact_passwd = '" . $utilsObject->encodePass($ret["contact_passwd"], 'md5') . "', ";
         }
     }
     if (isset($ret["contact_lang"]) && $ret["contact_lang"] != null && $ret['contact_lang']) {

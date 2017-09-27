@@ -113,6 +113,11 @@ class CentreonContact extends CentreonObject
     protected $timezoneObject;
 
     /**
+     * @var CentreonUtils
+     */
+    protected $utilsObject;
+
+    /**
      * Constructor
      *
      * @return void
@@ -123,6 +128,7 @@ class CentreonContact extends CentreonObject
         $this->tpObject = new CentreonTimePeriod();
         $this->object = new \Centreon_Object_Contact();
         $this->timezoneObject = new \Centreon_Object_Timezone();
+        $this->utilsObject = new CentreonUtils();
         $this->params = array('contact_host_notification_options' => 'n',
             'contact_service_notification_options' => 'n',
             'contact_location' => '0',
@@ -195,7 +201,7 @@ class CentreonContact extends CentreonObject
         if (!$locale || $locale == "") {
             return true;
         }
-        if (strtolower($locale) == "en_us") {
+        if (strtolower($locale) == "en_us" || strtolower($locale) == "browser") {
             return true;
         }
         $dir = CentreonUtils::getCentreonPath() . "/www/locale/$locale";
@@ -257,6 +263,7 @@ class CentreonContact extends CentreonObject
      */
     public function add($parameters)
     {
+
         $params = explode($this->delim, $parameters);
         if (count($params) < $this->nbOfCompulsoryParams) {
             throw new CentreonClapiException(self::MISSINGPARAMETER);
@@ -266,7 +273,14 @@ class CentreonContact extends CentreonObject
         $addParams[$this->object->getUniqueLabelField()] = $params[self::ORDER_UNIQUENAME];
         $addParams['contact_name'] = $params[self::ORDER_NAME];
         $addParams['contact_email'] = $params[self::ORDER_MAIL];
-        $addParams['contact_passwd'] = md5($params[self::ORDER_PASS]);
+
+        $algo = $this->utilsObject->detectPassPattern($params[self::ORDER_PASS]);
+        if(!$algo){
+            $addParams['contact_passwd'] = $this->utilsObject->encodePass($params[self::ORDER_PASS]);
+        } else {
+            $addParams['contact_passwd'] = $params[self::ORDER_PASS];
+        }
+
         $addParams['contact_admin'] = $params[self::ORDER_ADMIN];
         $addParams['contact_oreon'] = $params[self::ORDER_ACCESS];
         if ($this->checkLang($params[self::ORDER_LANG]) == false) {
@@ -460,7 +474,15 @@ class CentreonContact extends CentreonObject
             $filters,
             "AND"
         );
+
+
         foreach ($elements as $element) {
+
+            $algo = $this->utilsObject->detectPassPattern($element['contact_passwd']);
+            if(!$algo){
+                $element['contact_passwd'] = $this->utilsObject->encodePass($element['contact_passwd']);
+            }
+
             $addStr = $this->action . $this->delim . "ADD";
             foreach ($this->insertParams as $param) {
                 $addStr .= $this->delim . $element[$param];
