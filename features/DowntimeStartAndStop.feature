@@ -43,3 +43,9 @@ Feature: Downtime start and stop
     Given a recurrent downtime on an other timezone service
     When this one gives a downtime
     Then the downtime start and end uses host timezone
+
+  @critical
+  Scenario: Configure recurrent downtime on summer changint time
+    Given a recurrent downtime starting on summer changing time
+    When summer time is approaching
+    Then the downtime is scheduled
