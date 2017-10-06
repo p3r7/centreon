@@ -106,12 +106,12 @@ class DowntimeDSTContext extends CentreonContext
     {
         // on Europe/Paris at 2AM, we jump to 3AM
         $this->downtimeProperties = array(
-            'start_time' => '02:15',
-            'end_time' => '02:45',
+            'start_time' => '02:03',
+            'end_time' => '02:33',
             'expected_start' => '',
             'expected_end' => '',
             'expected_duration' => '0', // 30m
-            'faketime' => '2021-03-28 01:56:00'
+            'faketime' => '2021-03-28 01:58:00'
         );
 
         $this->setDowntime();
@@ -140,14 +140,32 @@ class DowntimeDSTContext extends CentreonContext
      */
     public function aRecurrentDowntimeStartingOnWinterChangingDate()
     {
-        // on Europe/Paris at 2AM, we jump to 3AM
+        // on Europe/Paris at 3AM, backward to 2AM
         $this->downtimeProperties = array(
             'start_time' => '02:03',
             'end_time' => '03:33',
             'expected_start' => '2021-10-31 02:03',
             'expected_end' => '2021-10-31 03:33',
-            'expected_duration' => '5400', // 23h
+            'expected_duration' => '5400', // 1h30
             'faketime' => '2021-10-31 01:58:00'
+        );
+
+        $this->setDowntime();
+    }
+
+    /**
+     * @Given a recurrent downtime ending on winter changing time
+     */
+    public function aRecurrentDowntimeEndingOnWinterChangingDate()
+    {
+        // on Europe/Paris at 3AM, backward to 2AM
+        $this->downtimeProperties = array(
+            'start_time' => '01:00',
+            'end_time' => '02:30',
+            'expected_start' => '2021-10-31 01:00',
+            'expected_end' => '2021-10-31 02:30',
+            'expected_duration' => '9000', // 2h30
+            'faketime' => '2021-10-31 00:58:00'
         );
 
         $this->setDowntime();
@@ -158,7 +176,6 @@ class DowntimeDSTContext extends CentreonContext
      */
     public function downtimeIsApproaching()
     {
-        // we launch faketime at 00:56:00, but it means 01:56:00 on Europe/Paris
         $this->container->execute(
             "faketime '" . $this->downtimeProperties['faketime'] . "'" .
             " php /usr/share/centreon/cron/downtimeManager.php",

@@ -4,7 +4,7 @@ Feature: Downtime DST
   To release quality products
 
   Background:
-    Given I am logged in a Centreon server
+    Given I am logged in a Centreon server located at "Europe/Paris"
     And a passive service is monitored
 
   @critical
@@ -41,10 +41,10 @@ Feature: Downtime DST
     Then the downtime is scheduled
 
   @critical
-#  Scenario: recurrent downtime ending on winter changing time
-#    Given a recurrent downtime ending on winter changing time
-#    When downtime is approaching
-#    Then the downtime is scheduled
+  Scenario: recurrent downtime ending on winter changing time
+    Given a recurrent downtime ending on winter changing time
+    When downtime is approaching
+    Then the downtime is scheduled
 
   @critical
 #  Scenario: recurrent downtime starting and ending on winter changing time
