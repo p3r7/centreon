@@ -110,7 +110,7 @@ class DowntimeDSTContext extends CentreonContext
             'end_time' => '02:33',
             'expected_start' => '',
             'expected_end' => '',
-            'expected_duration' => '0', // 30m
+            'expected_duration' => '0',
             'faketime' => '2021-03-28 01:58:00'
         );
 
@@ -120,7 +120,7 @@ class DowntimeDSTContext extends CentreonContext
     /**
      * @Given a recurrent downtime during all day on summer changing date
      */
-    public function aRecurrentDowntimeDuringAllDayOnSumerChangingDate()
+    public function aRecurrentDowntimeDuringAllDayOnSummerChangingDate()
     {
         // on Europe/Paris at 2AM, we jump to 3AM
         $this->downtimeProperties = array(
@@ -130,6 +130,33 @@ class DowntimeDSTContext extends CentreonContext
             'expected_end' => '2021-03-29 00:00',
             'expected_duration' => '82800', // 23h
             'faketime' => '2021-03-27 23:56:00'
+        );
+
+        $this->setDowntime();
+    }
+
+    /**
+     * @Given a recurrent downtime during all day on summer changing date is scheduled
+     */
+    public function aRecurrentDowntimeDuringAllDayOnSummerChangingDateIsScheduled()
+    {
+        $this->aRecurrentDowntimeDuringAllDayOnSummerChangingDate();
+        $this->downtimeIsApproaching();
+        $this->theDowntimeIsScheduled();
+    }
+
+    /**
+     * @Given a recurrent downtime of next day of summer changing date
+     */
+    public function aRecurrentDowntimeOfNextDayOfSummerChangingDate()
+    {
+        $this->downtimeProperties = array(
+            'start_time' => '00:00',
+            'end_time' => '24:00',
+            'expected_start' => '2021-03-29 00:00',
+            'expected_end' => '2021-03-30 00:00',
+            'expected_duration' => '86400', // 24h
+            'faketime' => '2021-03-28 23:58:00'
         );
 
         $this->setDowntime();
@@ -172,6 +199,69 @@ class DowntimeDSTContext extends CentreonContext
     }
 
     /**
+     * @Given a recurrent downtime starting and ending on winter changing time
+     */
+    public function aRecurrentDowntimeStartingAndEndingOnWinterChangingDate()
+    {
+        // on Europe/Paris at 3AM, backward to 2AM
+        $this->downtimeProperties = array(
+            'start_time' => '02:03',
+            'end_time' => '02:33',
+            'expected_start' => '2021-10-31 02:03',
+            'expected_end' => '2021-10-31 02:33',
+            'expected_duration' => '1800', // 30m
+            'faketime' => '2021-10-31 01:58:00'
+        );
+
+        $this->setDowntime();
+    }
+
+    /**
+     * @Given a recurrent downtime during all day on winter changing date
+     */
+    public function aRecurrentDowntimeDuringAllDayOnWinterChangingDate()
+    {
+        // on Europe/Paris at 3AM, backward to 2AM
+        $this->downtimeProperties = array(
+            'start_time' => '00:00',
+            'end_time' => '24:00',
+            'expected_start' => '2021-10-31 00:00',
+            'expected_end' => '2021-11-01 00:00',
+            'expected_duration' => '90000', // 25h
+            'faketime' => '2021-10-30 23:58:00'
+        );
+
+        $this->setDowntime();
+    }
+
+    /**
+     * @Given a recurrent downtime during all day on winter changing date is scheduled
+     */
+    public function aRecurrentDowntimeDuringAllDayOnWinterChangingDateIsScheduled()
+    {
+        $this->aRecurrentDowntimeDuringAllDayOnWinterChangingDate();
+        $this->downtimeIsApproaching();
+        $this->theDowntimeIsScheduled();
+    }
+
+    /**
+     * @Given a recurrent downtime of next day of winter changing date
+     */
+    public function aRecurrentDowntimeOfNextDayOfWinterChangingDate()
+    {
+        $this->downtimeProperties = array(
+            'start_time' => '00:00',
+            'end_time' => '24:00',
+            'expected_start' => '2021-11-01 00:00',
+            'expected_end' => '2021-11-02 00:00',
+            'expected_duration' => '86400', // 24h
+            'faketime' => '2021-10-31 23:58:00'
+        );
+
+        $this->setDowntime();
+    }
+
+    /**
      * @When downtime is approaching
      */
     public function downtimeIsApproaching()
@@ -197,20 +287,31 @@ class DowntimeDSTContext extends CentreonContext
                 );
                 $output = $return['output'];
                 if (
-                    preg_match(
+                    preg_match_all(
                         '/SCHEDULE_SVC_DOWNTIME;' . $this->host . ';' . $this->service . ';(\d+);(\d+);.+/',
                         $output,
                         $matches
                     )
                 ) {
+                    $startTimestamp = end($matches[1]);
+                    $endTimestamp = end($matches[2]);
                     $dateStart = new DateTime('now', new \DateTimeZone('Europe/Paris'));
-                    $dateStart->setTimestamp($matches[1]);
+                    $dateStart->setTimestamp($startTimestamp);
                     $dateEnd = new DateTime('now', new \DateTimeZone('Europe/Paris'));
-                    $dateEnd->setTimestamp($matches[2]);
+                    $dateEnd->setTimestamp($endTimestamp);
                     if ($dateStart->format('Y-m-d H:i') == $this->downtimeProperties['expected_start'] &&
                         $dateEnd->format('Y-m-d H:i') == $this->downtimeProperties['expected_end'] &&
-                        ($matches[2] - $matches[1]) == $this->downtimeProperties['expected_duration']) {
+                        ($endTimestamp - $startTimestamp) == $this->downtimeProperties['expected_duration']) {
                         $scheduled = true;
+                    }
+                    $storageDb = $this->getStorageDatabase();
+                    $res = $storageDb->query(
+                        "SELECT downtime_id FROM downtimes " .
+                        "WHERE start_time = " . $startTimestamp . " " .
+                        "AND end_time = " . $endTimestamp
+                    );
+                    if (!$res->fetch()) {
+                        $scheduled = false;
                     }
                 }
 

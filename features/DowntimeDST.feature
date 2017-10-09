@@ -7,6 +7,9 @@ Feature: Downtime DST
     Given I am logged in a Centreon server located at "Europe/Paris"
     And a passive service is monitored
 
+
+# summer changing time
+
   @critical
   Scenario: recurrent downtime starting on summer changing time
     Given a recurrent downtime starting on summer changing time
@@ -31,8 +34,15 @@ Feature: Downtime DST
     When downtime is approaching
     Then the downtime is scheduled
 
+  @critical
+  Scenario: recurrent downtime of next day of summer changing date
+    Given a recurrent downtime during all day on summer changing date is scheduled
+    And a recurrent downtime of next day of summer changing date
+    When downtime is approaching
+    Then the downtime is scheduled
 
 
+# winter changing time
 
   @critical
   Scenario: recurrent downtime starting on winter changing time
@@ -47,13 +57,20 @@ Feature: Downtime DST
     Then the downtime is scheduled
 
   @critical
-#  Scenario: recurrent downtime starting and ending on winter changing time
-#    Given a recurrent downtime starting and ending on winter changing time
-#    When downtime is approaching
-#    Then the downtime is not scheduled
+  Scenario: recurrent downtime starting and ending on winter changing time
+    Given a recurrent downtime starting and ending on winter changing time
+    When downtime is approaching
+    Then the downtime is scheduled
 
   @critical
-#  Scenario: recurrent downtime during all day on winter changing date
-#    Given a recurrent downtime during all day on winter changing date
-#    When downtime is approaching
-#    Then the downtime is scheduled
+  Scenario: recurrent downtime during all day on winter changing date
+    Given a recurrent downtime during all day on winter changing date
+    When downtime is approaching
+    Then the downtime is scheduled
+
+  @critical
+  Scenario: recurrent downtime of next day of winter changing date
+    Given a recurrent downtime during all day on winter changing date is scheduled
+    And a recurrent downtime of next day of winter changing date
+    When downtime is approaching
+    Then the downtime is scheduled
