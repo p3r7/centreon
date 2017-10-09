@@ -189,7 +189,7 @@ class CentreonContactgroup
 
     /**
      * Synchronize with LDAP groups
-     * 
+     *
      * @return array | array of error messages
      */
     public function syncWithLdap()
@@ -198,7 +198,7 @@ class CentreonContactgroup
         $ldapres = $this->db->query($query);
 
         $msg = array();
-        
+
         /*
          * Connect to LDAP Server
          */
@@ -213,7 +213,10 @@ class CentreonContactgroup
                      */
                     if (false === $ldapConn->getEntry($row['cg_ldap_dn'])) {
                         $dn = $ldapConn->findGroupDn($row['cg_name']);
-                        if (false === $dn) {
+                        if (null === $dn) {
+							$msg[] = "Error while attempting to retrieve group DN.";
+							return $msg;
+                        } elseif (false === $dn) {
                             /*
                              * Delete the ldap group in contactgroup
                              */
@@ -264,7 +267,7 @@ class CentreonContactgroup
         }
         return $msg;
     }
-    
+
     /**
      * Get contact group name from contact group id
      *
@@ -283,7 +286,7 @@ class CentreonContactgroup
             throw Exception('No contact group name found');
         }
     }
-    
+
     /**
      * Verified if ldap contactgroup as not the same name of a Centreon contactgroup
      *
@@ -316,9 +319,9 @@ class CentreonContactgroup
         }
         return true;
     }
-    
+
     /**
-     * 
+     *
      * @param integer $field
      * @return array
      */
@@ -352,7 +355,7 @@ class CentreonContactgroup
                 $parameters['relationObject']['comparator'] = 'cg_cg_id';
                 break;
         }
-        
+
         return $parameters;
     }
 
